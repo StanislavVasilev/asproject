@@ -16,9 +16,8 @@ public class IOTwoDimensionalArrayClass {
       }
     }
     for (int j = 0; j < rightArrIndex; j++) {
-      int before = intArr[0][j];
-      int after = intArr[0][j]*3;
-      System.out.println( j + " элемент 1 строки матрицы(" + before + "), умноженный на 3 равен: " + after);
+      int num = intArr[0][j];
+      System.out.println( j + " элемент 1 строки матрицы(" + num + "), умноженный на 3 равен: " + num*3);
     }
   }
 }
