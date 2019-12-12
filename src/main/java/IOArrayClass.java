@@ -13,13 +13,18 @@ public class IOArrayClass {
     System.out.println("Задайте размер массива");
     int i = in.nextInt();
     int[] intArray = new int[i];
-
+    int[] arr = new int[5];
+    System.out.println(intArray.length);
+    System.out.println(arr.length);
     for (int val = 0; val < intArray.length; val++){
       System.out.println("Введите значение " + (val+1) + " элемента массива");
       int num = in.nextInt();
-      intArray[val] = num*2;
+      intArray[val] = num;
     }
-    System.out.println("Каждое введенное число было умножено на 2 при присваивании значения элементу массива :" + Arrays.toString(intArray));
+    for (int k = 0; k < intArray.length; k++){
+      System.out.println("Значение элемента массива с индексом " + k +  " равно " + intArray[k] + " и после умноженния на 2 =  " + intArray[k]*2);
+    }
+
   }
 
 }
