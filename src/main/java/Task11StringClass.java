@@ -9,6 +9,6 @@ public class Task11StringClass {
     Scanner in = new Scanner(System.in);
     System.out.println("Введите произвольный текст");
     String text = in.nextLine();
-    System.out.println("Вы ввели: " + text);
+    System.out.println(String.format("Вы ввели: %s", text));
   }
 }

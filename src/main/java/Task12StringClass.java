@@ -10,6 +10,6 @@ public class Task12StringClass {
     System.out.println("Введите произвольный текст");
     String text = in.nextLine();
     text = text.replace(" ", "");
-    System.out.println("Введенный вами текст без пробелов выглядит так:  " + text);
+    System.out.println(String.format("Введенный вами текст без пробелов выглядит так: %s" , text));
   }
 }
