@@ -6,16 +6,17 @@ import java.util.Scanner;
  *1. Ввод числа с клавиатуры и запись его в строковую переменную S
  *2. Конвертация строковой переменной S в числовую переменную X типа int
  *3. Конвертация числа X типа int в число Y типа double
+ * Все три числа разных типов необходимо в столбик вывести на экран
  */
 public class Task14TypesConversionClass {
   public static void main(String[] args) {
     Scanner in  = new Scanner(System.in);
     System.out.println("Введите любое целое число");
     String s = in.nextLine();
-    System.out.println(s);
+    System.out.println("String" + s);
     int x = Integer.parseInt(s);
-    System.out.println(x);
+    System.out.println("int" + x);
     double y =  x;
-    System.out.println(y);
+    System.out.println("double" + y);
   }
 }
